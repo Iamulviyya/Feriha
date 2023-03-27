@@ -33,7 +33,21 @@ nav ul li {
     cursor: pointer;
     transition: all 2s ease-in-out;
 }
+/* id > class > element > pseudo class, pseudo element */
 nav ul li:hover {
     color: white;
     background-color: darkgreen;
+}
+
+.list{
+    color: bisque;
+}
+#qwerty{
+    color: red;
+}
+.list.list1{
+    border: 1px solid;
+}
+nav ul a:focus{
+    color: red;
 }
