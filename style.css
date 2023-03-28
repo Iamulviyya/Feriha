@@ -24,7 +24,7 @@ nav ul {
     list-style: none;
 }
 
-nav ul li {
+nav ul li.list,.h1 {
     border: 1px solid blue;
     background-color: aqua;
     padding: 4px;
@@ -34,7 +34,7 @@ nav ul li {
     transition: all 2s ease-in-out;
 }
 /* id > class > element > pseudo class, pseudo element */
-nav ul li:hover {
+nav ul li.list:hover {
     color: white;
     background-color: darkgreen;
 }
@@ -50,4 +50,19 @@ nav ul li:hover {
 }
 nav ul a:focus{
     color: red;
+}
+/* ========= dropdown menu ======== */
+.content1{
+    display: none;
+}
+.main-list-item{
+    position: relative;
+}
+.main-list-item .content1{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+nav ul li div.h1:hover~.content1{
+    display: flex;
 }
